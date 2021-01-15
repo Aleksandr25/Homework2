@@ -5,6 +5,14 @@
 .footer-content {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 700px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .footer__title {
@@ -26,18 +34,32 @@
     font-weight: 400;
     line-height: 22.5px;
     text-align: center;
-    padding-bottom: 80px;
 }
 
-.footer__icon {
+.footer__facebook {
     border: 2px solid #ffffff;
-    padding: 10px;
+    padding: 11px 16px;
+}
+
+.footer__twitter {
+    border: 2px solid #ffffff;
+    padding: 13px 10px;
+}
+
+.footer__ink {
+    border: 2px solid #ffffff;
+    padding: 12px;
+}
+
+.footer__twitter:hover, .footer__ink:hover, .footer__facebook:hover {
+    cursor: pointer;
+    transition: all 1s ease-out;
+    background-color: #ffffff;
 }
 
 .footer-share {
     text-align: center;
 }
-
 
 .footer-copy {
     background-color: #313454;
